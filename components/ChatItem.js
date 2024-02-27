@@ -62,7 +62,7 @@ export default function ChatItem({item, router, noBorder, currentUser}) {
         {/* <Image 
             source={{uri: item?.profileUrl}} 
             style={{height: hp(6), width: hp(6)}}
-            className="rounded-full" 
+            className="rounded-full" s
         /> */}
 
         <Image
