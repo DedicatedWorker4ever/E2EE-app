@@ -78,8 +78,8 @@ export default function SignIn() {
                                 <Loading size={hp(6.5)} />
                             </View>
                         ):(
-                            <TouchableOpacity onPress={handleLogin} style={{height: hp(6.5)}} className="bg-indigo-500 rounded-xl justify-center items-center">
-                                <Text style={{fontSize: hp(2.7)}} className="text-white font-bold tracking-wider">
+                            <TouchableOpacity onPress={handleLogin} style={{ height: hp(6.5), backgroundColor: '#3b82f6', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
+                                <Text style={{ fontSize: hp(2.7), color: '#fff', fontWeight: 'bold', letterSpacing: 1 }}>
                                     Sign In
                                 </Text>
                             </TouchableOpacity>

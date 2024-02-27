@@ -49,7 +49,16 @@ export default function ChatItem({item, router, noBorder, currentUser}) {
         }
     }
   return (
-    <TouchableOpacity onPress={openChatRoom} className={`flex-row justify-between mx-4 items-center gap-3 mb-4 pb-2 ${noBorder? '': 'border-b border-b-neutral-200'}`}>
+    <TouchableOpacity onPress={openChatRoom} style={{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginHorizontal: 16, // equivalent to mx-4 in Tailwind
+        alignItems: 'center',
+        marginBottom: 8, // equivalent to mb-4 in Tailwind
+        paddingBottom: 2, // equivalent to pb-2 in Tailwind
+        borderBottomWidth: noBorder ? 0 : 1,
+        borderBottomColor: 'rgba(74, 85, 104, 0.1)', // color equivalent to border-b-neutral-200 in Tailwind
+      }}>
         {/* <Image 
             source={{uri: item?.profileUrl}} 
             style={{height: hp(6), width: hp(6)}}
@@ -65,17 +74,17 @@ export default function ChatItem({item, router, noBorder, currentUser}) {
 
 
         {/* name and last message */}
-        <View className="flex-1 gap-1">
-            <View className="flex-row justify-between">
-                <Text style={{fontSize: hp(1.8)}} className="font-semibold text-neutral-800">{item?.username}</Text>
-                <Text style={{fontSize: hp(1.6)}} className="font-medium text-neutral-500">
-                    {renderTime()}
-                </Text>
-            </View>
-            <Text style={{fontSize: hp(1.6)}} className="font-medium text-neutral-500">
-                {renderLastMessage()}
+        <View style={{ flex: 1, gap: hp(0.3), marginLeft: hp(1) }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+            <Text style={{ fontSize: hp(2.2), fontWeight: 'bold', color: '#333' }}>{item?.username}</Text>
+            <Text style={{ fontSize: hp(1.8), color: '#666' }}>
+                {renderTime()}
             </Text>
         </View>
-    </TouchableOpacity>
+        <Text style={{ fontSize: hp(1.8), color: '#666' }}>
+            {renderLastMessage()}
+        </Text>
+    </View>
+</TouchableOpacity>
   )
 }

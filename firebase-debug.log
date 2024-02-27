@@ -1,0 +1,21 @@
+[debug] [2024-02-25T15:16:48.392Z] ----------------------------------------------------------------------
+[debug] [2024-02-25T15:16:48.395Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\thybo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-25T15:16:48.395Z] CLI Version:   13.3.1
+[debug] [2024-02-25T15:16:48.395Z] Platform:      win32
+[debug] [2024-02-25T15:16:48.395Z] Node Version:  v21.6.0
+[debug] [2024-02-25T15:16:48.395Z] Time:          Sun Feb 25 2024 16:16:48 GMT+0100 (Central European Standard Time)
+[debug] [2024-02-25T15:16:48.395Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-25T15:16:48.402Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-25T15:16:48.403Z] > authorizing via signed-in user (samuelbartek123@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\thybo\OneDrive\Skrivebord\Chat e2\firebase-chat
+

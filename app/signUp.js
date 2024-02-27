@@ -101,7 +101,7 @@ export default function SignUp() {
                                 <Loading size={hp(6.5)} />
                             </View>
                         ):(
-                            <TouchableOpacity onPress={handleRegister} style={{height: hp(6.5)}} className="bg-indigo-500 rounded-xl justify-center items-center">
+                            <TouchableOpacity onPress={handleRegister} style={{ height: hp(6.5), backgroundColor: '#3b82f6', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
                                 <Text style={{fontSize: hp(2.7)}} className="text-white font-bold tracking-wider">
                                     Sign Up
                                 </Text>
